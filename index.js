@@ -1,38 +1,34 @@
-var Spring = require("js-spring");
-
-var { app } = new Spring({
-  name: "torpedo"
-});
-
 class get {
-  constructor(path) {
-    this.path = path;
+  constructor(app) {
+    if (!app || !app.settings.port)
+      throw new Error("App is a required parameter!");
+    this.app = app;
   }
-  pass() {
-    app.get(this.path, function(req, res, next) {
+  pass(path) {
+    this.app.get(path, function(req, res, next) {
       return res.end();
     });
   }
-  send(toSend) {
-    app.get(this.path, function(req, res, next) {
+  send(path, toSend) {
+    this.app.get(path, function(req, res, next) {
       return res.send(toSend);
     });
   }
-  sendFile(filePath) {
-    app.get(this.path, function(req, res, next) {
+  sendFile(path, filePath) {
+    this.app.get(path, function(req, res, next) {
       return res.sendFile(filePath);
     });
   }
-  do(cb) {
-    app.get(this.path, function(req, res, next) {
+  do(path, cb) {
+    this.app.get(path, function(req, res, next) {
       cb(req, res, next);
     });
   }
-  add(run) {
+  add(path, run) {
     if (typeof run == "function") {
-      app.get(this.path, run);
+      this.app.get(path, run);
     } else {
-      app.get(this.path, function(req, res, next) {
+      this.app.get(this.path, function(req, res, next) {
         return res.send(run);
       });
     }
