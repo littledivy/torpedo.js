@@ -1,7 +1,9 @@
 const spring = require("js-spring");
 const { app } = new spring({ name: "test" });
+
 const Torpedo = require("./index");
 const torpedo = new Torpedo(app);
+
 const fetch = require("node-fetch");
 
 function test(path, cb) {
