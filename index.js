@@ -1,4 +1,4 @@
-var Spring = require('../spring.js');
+var Spring = require('js-spring');
 
 var log = console.log;
 class init {
