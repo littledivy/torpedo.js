@@ -1,6 +1,7 @@
 var Torpedo = require('../');
-var instance = new Torpedo({ name: "test" });
-var { get, post } = instance;
+var instance = new Torpedo({ name: "test", mongo:"mongodb://localhost:27017/" });
+var { get, post, mongo } = instance;
+var User = {};
 var path = require("path");
 
 describe('Torpedo', () => {
@@ -90,3 +91,26 @@ describe('HTTP: Post', () => {
     
         
 });
+
+describe('MongoDB Methods', () => {
+    it('Connect to Mongo', done => {
+        if (mongo) done();
+    })
+    it('Define a Schema', done => {
+        User = mongo.schema("user", {
+            user: String
+        });
+        if (User) done();
+    })
+    it('Save MongoDB documents', done => {
+        var newUser = new User({ user: "Divy" });
+        newUser.save(() => { return done() });
+    })
+    it('Perform mongoose queries', done => {
+        User
+        .findOne({ user:"Divy" })
+         .exec((err, result) => {
+             if (result) done();
+        })
+    })
+})
