@@ -14,6 +14,7 @@ class init {
 		}		
 		this.get = require('./src/get')(this.app).get;
 		this.post = require('./src/post')(this.app).post;
+		if(opt.mongo) this.mongo = require('./src/mongo')(opt.mongo);
 	   module.exports = this;
 	}
 }
