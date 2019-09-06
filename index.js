@@ -1,5 +1,4 @@
 var Spring = require('js-spring');
-
 var log = console.log;
 class init {
 	constructor(opt) {
@@ -14,7 +13,9 @@ class init {
 		}		
 		this.get = require('./src/get')(this.app).get;
 		this.post = require('./src/post')(this.app).post;
+		this.socket = instance.socket;
 		if(opt.mongo) this.mongo = require('./src/mongo')(opt.mongo);
+		if(opt.client) this.socket = require('socket.io-client')
 	   module.exports = this;
 	}
 }
