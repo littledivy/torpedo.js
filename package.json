@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --exit --timeout Infinity"
+    "test": "mocha --exit --timeout 30000"
   },
   "author": "",
   "license": "ISC",
