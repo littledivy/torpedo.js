@@ -12,7 +12,7 @@
     "js-spring": "^3.2.2"
   },
   "devDependencies": {
-    "mocha":""
+    "mocha":"latest"
   },
   "repository": {
     "type": "git",
