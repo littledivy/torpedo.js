@@ -102,15 +102,4 @@ describe('MongoDB Methods', () => {
         });
         if (User) done();
     })
-    it('Save MongoDB documents', done => {
-        var newUser = new User({ user: "Divy" });
-        newUser.save(() => { return done() });
-    })
-    it('Perform mongoose queries', done => {
-        User
-        .findOne({ user:"Divy" })
-         .exec((err, result) => {
-             if (result) done();
-        })
-    })
 })

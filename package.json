@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "js-spring": "^3.2.2"
+    "js-spring": "^3.2.2",
+    "mongoose": "^5.6.13"
   },
   "devDependencies": {
     "mocha": "latest"
