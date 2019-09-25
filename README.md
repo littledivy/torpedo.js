@@ -49,10 +49,15 @@
 ## Usage
 
 ```javascript
+const Spring = require("js-spring");
+// You can use Express tooo...
 const Torpedo = require("torpedo.js");
-const { get } = new Torpedo({ name: "test" });
+
+const { app } = new Spring({ name:"test" });
+const { get, post } = new Torpedo(app);
 
 get('/').send('Hello, World!');
+post('/login').do((req, res) => {});
 ```
 
 _For more examples, please refer to the [Documentation](https://torpedo.js.org)_
