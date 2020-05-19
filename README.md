@@ -49,8 +49,12 @@
 ## Usage
 
 ```javascript
-const Torpedo = require("torpedo.js");
-const { get } = new Torpedo({ name: "test" });
+import Torpedo from '@divy-work/torpedo.js';
+
+const { get } = new Torpedo({
+  name: 'Torpedo app',
+  port: 5000
+});
 
 get('/').send('Hello, World!');
 ```
@@ -60,7 +64,8 @@ _For more examples, please refer to the [Documentation](https://torpedo.js.org)_
 ### Installation
 
 ```sh
-npm install -g torpedo.js
+yarn add @divy-work/torpedo.js
+# using npm? npm i --save @divy-work/torpedo.js
 ```
 <!-- ROADMAP -->
 ## Roadmap
@@ -88,7 +93,7 @@ Contributions are what make the open source community such an amazing place to b
 
 \(The MIT License\)
 
-Copyright \(c\) 2019 Divy Srivastava [dj.srivastava23@gmail.com](mailto:dj.srivastava23@gmail.com)
+Copyright \(c\) 2020 Divy Srivastava [dj.srivastava23@gmail.com](mailto:dj.srivastava23@gmail.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files \(the 'Software'\), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
