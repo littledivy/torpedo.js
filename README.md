@@ -2,8 +2,8 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
+![torpedo.js](https://github.com/divy-work/torpedo.js/workflows/torpedo.js/badge.svg)
 
 
 <!-- PROJECT LOGO -->
@@ -106,16 +106,14 @@ Divy Srivastava - [@undefined_void](https://twitter.com/@undefined_void) - dj.sr
 Project Link: [https://github.com/DivySrivastava/torpedo.js](https://github.com/DivySrivastava/torpedo.js)
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/DivySrivastava/torpedo.js?style=flat-square
-[contributors-url]: https://github.com/DivySrivastava/torpedo.js/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/DivySrivastava/torpedo.js?style=flat-square
-[forks-url]: https://github.com/torpedo.js/torpedo.js/network/members
-[stars-shield]: https://img.shields.io/github/stars/DivySrivastava/torpedo.js?style=flat-square
+[contributors-shield]: https://img.shields.io/github/contributors/divy-work/torpedo.js?style=flat-square
+[contributors-url]: https://github.com/divy-work/torpedo.js/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/divy-work/torpedo.js?style=flat-square
+[forks-url]: https://github.com/divy-work/torpedo.js/network/members
+[stars-shield]: https://img.shields.io/github/stars/divy-work/torpedo.js?style=flat-square
 [stars-url]: https://github.com/torpedo.js/torpedo.js/stargazers
-[issues-shield]: https://img.shields.io/github/issues/DivySrivastava/torpedo.js?style=flat-square
-[issues-url]: https://github.com/torpedo.js/torpedo.js/issues
-[license-shield]: https://img.shields.io/github/license/DivySrivastava/torpedo.js?style=flat-square
-[license-url]: https://github.com/DivySrivastava/torpedo.js/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/
+[issues-shield]: https://img.shields.io/github/issues/divy-work/torpedo.js?style=flat-square
+[issues-url]: https://github.com/divy-work/torpedo.js/issues
+[license-shield]: https://img.shields.io/github/license/divy-work/torpedo.js?style=flat-square
+[license-url]: https://github.com/divy-work/torpedo.js/blob/master/LICENSE.txt
 [product-screenshot]: docs/img/screenshot.png
