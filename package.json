@@ -1,0 +1,31 @@
+{
+  "name": "torpedo.js",
+  "version": "1.0.3",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "mocha --exit --timeout 30000",
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.6",
+    "express": "^4.17.1",
+    "mongoose": "latest"
+  },
+  "devDependencies": {
+    "mocha": "latest",
+    "tslint": "^5.19.0",
+    "typescript": "^3.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DivySrivastava/torpedo.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DivySrivastava/torpedo.js/issues"
+  },
+  "homepage": "https://github.com/DivySrivastava/torpedo.js#readme"
+}
