@@ -1,6 +1,6 @@
 {
   "name": "@divy-work/torpedo.js",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Developer friendly web developement utility.",
   "main": "dist/index.js",
   "scripts": {
